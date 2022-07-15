@@ -1,1 +1,3 @@
-# elixirtestwebsite.github.io
+# ElixirTest.github.io
+
+Test website for Elixir.
