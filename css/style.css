@@ -1,0 +1,1393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: MontserratBlackHeader;
+    src: url('/fonts/Montserrat/Montserrat-Black.ttf');
+    font-style: normal;
+    font-feature-settings: "case" 1; 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: MontserratBlackHeader;
+    font-feature-settings: "case" 1;
+    font-size: 3.75rem;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 167%;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 180%;
+    
+}
+.bold {
+    font-weight: 700;
+}
+.extraBold {
+    font-weight: 800;
+}
+
+.smallCaps {
+    font-variant: small-caps;
+}
+.smallCapQuestion {
+    font-variant: small-caps;
+}
+.caseSensitive {
+    font-family: MontserratBlackHeader;
+    font-feature-settings: "case" 1;
+}
+.bottom {
+    margin-bottom: 200px;
+}
+
+.navbar {
+    color: #fff;
+    height: 100px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+.navMenu {
+    display: flex;
+    margin-right: 2.5em;
+    vertical-align: top;
+    font-size: 0.875rem;
+}
+.navMenuPageLinks {
+    display: flex;
+}
+.socialMediaLinksContainer {
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 1vw;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+
+.defaultButton.selected {
+    position: relative;
+    color: #000;
+}
+
+.defaultButton.selected:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 11%;
+    width: 24px;
+    border-radius: 25%;
+  }
+
+.defaultButton {
+    display: flex;
+    color: #656565;
+    height: 2rem;
+    margin: 0em 1.5em;
+    flex: 0 0 auto;
+    align-items: center;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.defaultButton:hover {
+    color: rgb(40, 40, 40);
+
+}
+
+.socialMediaIconLinkTwitter {
+    display: flex;
+    color: #000;
+    height: 2rem;
+    margin-right: 2.5em;
+    flex: 0 0 auto;
+    align-items: center;
+    border-radius: 0.188rem;
+    font-weight: 700;
+}
+.socialMediaIconLinkDiscord {
+    display: flex;
+    color: #000;
+    height: 2rem;
+    flex: 0 0 auto;
+    align-items: center;
+    border-radius: 0.188rem;
+    font-weight: 700;
+}
+
+.socialMediaIconLink:hover {
+}
+
+.twitterIcon {
+    width: 20px;
+}
+
+.discordIcon {
+    width: 22px;
+}
+
+.exclamationParentheses {
+    text-transform: uppercase;
+}
+.purple {
+    color: #BAA8FB;
+}
+.orange {
+    color: #DA401C;
+}
+.periwinkle {
+    color: #94A4FF;
+}
+.turquoise {
+    color: #49E5C9;
+}
+.hotPink {
+    color: #fe5972
+}
+
+/* Hero Section CSS */
+
+.homeMain {
+    justify-content: space-between;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.homeMainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 200px);
+
+}
+
+.homeCharLeft {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22%;
+}
+
+.homeMainText {
+    display: flex;
+    width: 48%;
+    align-items: center;
+}
+
+.homeCharRight {
+    margin-right: auto;
+    margin-left: auto;
+    width: 22%;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.img3 {
+    width: 100%;
+}
+
+
+
+/*Cave Page*/
+.caveMain {
+    justify-content: space-between;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.cave-container {
+    margin-left: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+.caveLeftContainer {
+    margin-top: 55px;
+    text-align: left;
+    width: 50%
+}
+
+.caveRightContainer {
+    margin-top: 0px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    height: calc(100vh - 205px) !important;
+    
+}
+
+.caveMobileImgContainer {
+    display: none;
+}
+.caveImg {
+    width: 45%;
+    max-width: 810px;
+    z-index: -100;
+
+}
+
+.caveTextArea {
+    width: 85%;
+}
+
+.caveToTeamButton {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 230px;
+    background-color:#94A4FF;
+    color: white;
+    font-size: 13px;
+    padding-top: 0.6em;
+    padding-bottom: 0.8em;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.caveToTeamButtonText {
+    font-variant: small-caps;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.downArrowImg {
+    margin-top: 3px;
+    width: 12px;
+    height: 12px;
+    margin-right: 20px;
+
+}
+.teamHeader {
+    margin-top: 3em;
+    padding-top: 100px;
+}
+
+.teamSubSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teamSubSectionLeft {
+    width: 45%;
+}
+
+.teamSubSectionRight {
+    width: 45%;
+}
+
+.teamMemberRight {
+    margin-top: 0.4em;
+}
+
+.teamMemberLeft {
+    margin-top: 0.4em;
+}
+
+.teamImgLeft {
+    width: 100%;
+    border-radius: 3px;
+
+}
+
+.teamImgRight {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.teamLeftText {
+    margin-top: 0.3em;
+}
+
+.teamRightText {
+    margin-top: 0.3em;
+}
+
+
+.communityHeader {
+    margin-top: 3em;
+    padding-top: 100px;
+}
+
+.communityParagraph {
+    margin-bottom: 2.67em;
+}
+
+.chaseCaveImgContainer {
+    display: flex;
+    justify-content: center;
+}
+.communityImg {
+    width: 80%;
+}
+
+/*Voyage Page*/
+.voyageMain {
+    justify-content: space-between;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: auto;
+
+}
+
+.voyageTop {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.voyageBottom {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.voyage-container {
+    margin-left: auto;
+    display: flex;
+}
+
+.voyage-container.Top {
+    width: 90%;
+    justify-content: space-between;
+    
+    margin-right: 0;
+}
+
+.voyageLeft {
+    margin-top: 55px;
+    text-align: left;
+    width: 57%
+}
+
+.voyageRightContainer {
+    display: flex;
+    margin-top: 55px;
+    width: 43%;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 205px) !important;
+}
+
+.voyageImg {
+    width: 24%;
+    max-width: 500px;
+    z-index: -100;
+    /*bottom: 0px;*/
+    /*left: 70vw;*/
+
+}
+.textAreaVoyage {
+    width: 100%;
+}
+.textAreaVoyageHeading {
+    display: flex;
+    width: 90%
+}
+.voyageParagraphText {
+    width: 75%;
+}
+.voyageTopCards {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 50px;
+}
+.voyageTopCards.is-not-active {
+    display: none;
+}
+
+.voyageBottomCards {
+    margin-top: calc(min(5vw, 80px));
+    display: flex;
+    justify-content: space-between;
+}
+.voyageBottomCards.is-not-active {
+    display: none;
+}
+
+.card1Section {
+    width: 45%;
+    cursor: pointer;
+}
+
+.card2Section {
+    width: 45%;
+    cursor: pointer;
+
+}
+
+.card3Section {
+    width: 45%;
+    cursor: pointer;
+
+}
+.card4Section {
+    width: 45%;
+    cursor: pointer;
+
+}
+
+.card1 {
+    width: 100%;
+
+}
+.card2 {
+    width: 100%;
+
+}
+.card3 {
+    width: 100%;
+}
+.card4 {
+    width: 100%;
+}
+
+.popupOne {
+    background-color: #FFF8EE;
+    display: none;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 50px;
+}
+.popupOne.is-active{
+    display: flex;
+}
+
+.popupTwo {
+    background-color: #FFF8EE;
+    display: none;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 50px;
+}
+.popupTwo.is-active {
+    display: flex;
+}
+
+.popupThree {
+    background-color: #FFF8EE;
+    display: none;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 50px;
+}
+.popupThree.is-active {
+    display: flex;
+}
+
+.popupFour {
+    background-color: #FFF8EE;
+    display: none;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 50px;
+}
+.popupFour.is-active {
+    display: flex;
+}
+
+.popupContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 7vw;
+}
+.popupHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc(max(4vw, 35px));
+
+}
+.popupHeaderText {
+    margin-left: 10%;
+    font-size: 40px;
+    font-weight: 900;
+    font-variant: small-caps;
+}  
+
+.popupOneCancelButton {
+    width: 25px;
+    height: 25px;
+    margin-right: calc(max(35px, 5%));
+    cursor: pointer;
+}
+.popupTwoCancelButton {
+    width: 25px;
+    height: 25px;
+    margin-right: calc(max(35px, 5%));
+    cursor: pointer;
+}
+.popupThreeCancelButton {
+    width: 25px;
+    height: 25px;
+    margin-right: calc(max(35px, 5%));
+    cursor: pointer;
+}
+.popupFourCancelButton {
+    width: 25px;
+    height: 25px;
+    margin-right: calc(max(35px, 5%));
+    cursor: pointer;
+}
+
+.closePopupImg {
+    width: 100%;
+}
+.popupText {
+    font-weight: 400;
+    line-height: 2.67em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.popupSubHeading {
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+/*Mythos Page*/
+.mythosMain {
+    justify-content: space-between;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.mythos-container {
+    margin-left: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+.leftContainer {
+    margin-top: 55px;
+    text-align: left;
+    width: 50%
+}
+
+.mythosMobileImgContainer {
+    display: none;
+}
+.mythosTabletImgContainer {
+    display: none;
+}
+.mythosRightContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 55px;
+    width: 50%;
+}
+
+.mythosImg {
+    width: 43%;
+    max-width: 900px;
+    z-index: -100;
+}
+
+.mythosTextArea {
+    width: 100%;
+}
+.mythosParagraphText {
+    font-weight: 300;
+}
+  
+.mythosEnding {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1250px) {
+    h1 {
+        font-size: 3.125rem;
+    }
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+
+    }
+    .caveImg {
+        bottom: 0px;
+    }
+    .popupHeaderText {
+        font-size: 36px;
+    }
+    .voyageImg {
+        width: 30%;
+    }
+    .mythosImg {
+
+    }
+  
+
+
+}
+@media only screen and (max-width: 1130px) {
+    .leftContainer {
+        width: 45%;
+    }
+    .mythosRightContainer {
+        width: 55%;
+    }
+    .mythosImg {
+        width: 48%
+    }
+    
+    .caveRightContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;        
+    }
+    .voyageRightContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55px;
+        width: 50%;
+    }
+    .textAreaVoyageHeading {
+        width: 100%;
+    }
+
+
+    
+    .mythosParagraphText {
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .popupHeaderText {
+        font-size: 32px;
+    }
+    p {
+        font-size: 0.813rem;
+    }
+    .menu {
+        font-size: 0.813rem;
+    }
+}
+
+/*mobile/tablet*/
+@media only screen and (max-width: 950px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+
+    p {
+        font-size: 0.75rem;
+
+    }
+
+    .menu {
+        display: none;
+    }
+    .navMenu {
+        display: none;
+    }
+    
+    .logo {
+        margin-top: 25px;
+        margin-left: 30px;
+        width: 55px;
+        height: 55px;
+        max-width: 60px;
+        align-self: flex-start;
+        margin-right: 5px !important;
+
+    }
+    .hamburgerMenu {
+        margin-top: min(30px, 15vw);
+        margin-right: 30px;
+        max-width: 30px;
+        width: max(20px, 15vw)!important;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+  
+    .menuImg {
+        width: 100%;
+    }
+    .closeImg {
+        width: 100%;
+        display: none;
+    }
+    .bottom {
+        margin-bottom: 0px;
+    }
+
+    /*home screen*/
+
+
+    .homeMainContainer {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .homeMainText {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .homeCharLeft {
+        display: none;
+    }
+    .img1 {
+        display: none;
+    }
+    .homeCharRight {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    /*cave page*/
+
+    .cave-container {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .caveLeftContainer {
+        margin-top: 30px;
+        width: 100%
+    }
+    .caveMobileImgContainer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .caveMobileImg {
+        width: 100%;
+        border-radius: 0.8vw;
+    }
+
+    .teamHeader {
+        margin-top: 4em;
+    }
+    .caveRightContainer {
+        display: none;
+    }
+    .caveToTeamButton {
+       
+        width: 200px;
+    }
+    .caveToTeamButtonText {
+        font-size: 16px;
+        margin-left: 1em;
+    }
+    .downArrowImg {
+        margin-right: 16px;
+    
+    }
+    .caveImg {
+        width: 100%;
+    }
+
+    .caveTextArea {
+        width: 100%;
+    }
+
+    .communityImg {
+        width: 90%;
+        margin-bottom: 20vw;
+    }
+
+    /*Voyage Page*/
+
+    .voyageTop {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .voyageBottom {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .voyage-container {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .voyage-container.Top {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .voyageLeft {
+        margin-top: 30px;
+        text-align: left;
+        width: 100%
+    }
+
+    .voyageRightContainer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 0px;
+
+    }
+/*fix*/
+    .voyageRightImg {
+        order: 2;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .voyageRightContainer {
+        display: none;
+    }
+
+    .voyageImg {
+        width: 100%;
+        display: none;
+    }
+
+    .textAreaVoyage {
+        width: 100%;
+        order: 1;
+    }
+
+    .textAreaVoyageHeading {
+        display: flex;
+        width: 100%
+    }
+
+    .voyageParagraphText {
+        width: 100%;
+    }
+
+    .voyageTopCards {
+        order: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .voyageBottomCards {
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 20vw;
+
+    }
+
+
+    .card1Section { 
+        margin-top: 50px;
+        width: 45%;
+    }
+
+    .card2Section {
+        margin-top: 50px;
+        width: 45%;
+    }
+    .card3Section { 
+        margin-top: 50px;
+        width: 45%;
+    }
+
+    .card4Section {
+        margin-top: 50px;
+        width: 45%;
+    }
+
+    .card1 {
+        width: 100%;
+
+    }
+
+    .card2 {
+        width: 100%;
+
+    }
+   
+
+    .card3 {
+        width: 100%;
+
+    }
+
+    .card4 {
+        width: 100%;
+
+    }
+
+
+    /*mythos page*/
+
+
+    .mythos-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .leftContainer {
+        margin-top: 30px;
+        width: 100%
+    }
+
+    .mythosTabletImgContainer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+    }   
+    .mythosTabletImg {
+        width: 100%;
+        border-radius: 0.8vw;
+    }
+    .mythosRightContainer {
+        display: none;
+    }
+
+    .mythosImg {
+        width: 100%;
+    }
+    .mythosParagraphText {
+    }
+    .mobileBottom {
+        margin-bottom: 20vw;
+    }
+}
+
+
+/*menu section*/
+.menuMain {
+    justify-content: space-between;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 130px;
+    overflow: auto;
+    width: 100vw;
+    display: none;
+
+}
+.menuMain.is-active {
+    display: flex;
+}
+
+.menuImg.is-not-active {
+    width: 100%;
+    display: none;
+}
+.closeImg.is-active {
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+}
+.menuMainContainer {
+    margin-left: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0;
+}
+.menuSubContainer {
+    width: 100%;
+}
+.menuList {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.menuButton {
+    width: 100%;
+    display: flex;
+    color: #000;
+    height: 60px;
+    padding-left: min(30px,max(20px, 7vw));
+    align-items: center;
+    border-radius: 0.188rem;
+    background-color: rgba(132, 129, 129, .12);
+    font-weight: 700;
+    font-size: max(14px, min(15px, 6vw));
+    font-variant: normal;
+    text-align: left;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+.menuButton:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+.menuLines {
+    height: 55%;
+    padding-left: 0.7rem;
+}
+.menuTwitterIcon {
+    height: 45%;
+    padding-left: 1rem;
+    
+}
+.menuDiscordIcon {
+    height: 45%;
+    padding-left: 1rem;
+
+}
+.menuChar {
+    width: 100%;
+}
+.menuCharImg {
+    width: 60%;
+    margin-top: 5vw;
+}
+
+.menuExclamation {
+    font-family: MontserratBlackHeader;
+    font-feature-settings: "case" 1;
+    font-size: 25px;
+    padding-left: 0.4rem;
+}
+
+/*display: none for background page*/
+.homeMain.is-not-active {
+    display:none;
+}
+.caveMain.is-not-active {
+    display:none;
+}
+.mythosMain.is-not-active {
+    display:none;
+}
+.voyageMain.is-not-active {
+    display:none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .caveMobileImgContainer {
+        width: 85%;
+    }
+    .voyage-container.Top {
+        width: 85%
+    }
+    .textAreaVoyage {
+        width: 94.1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .voyageTopCards {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .popupHeaderText {
+        font-size: 28px;
+    }
+    .popupSubHeading {
+        font-size: 18px;
+    }
+    .popupOneCancelButton {
+        width: 20px;
+        height: 20px;
+        margin-right: calc(max(25px, 5%));
+    }
+    .popupTwoCancelButton {
+        width: 20px;
+        height: 20px;
+        margin-right: calc(max(25px, 5%));
+    }
+    .popupThreeCancelButton {
+        width: 20px;
+        height: 20px;
+        margin-right: calc(max(25px, 5%));
+    }
+    .popupFourCancelButton {
+        width: 20px;
+        height: 20px;
+        margin-right: calc(max(25px, 5%));
+    }
+    .popupContainer{
+        margin-top: 30px;
+    }
+    .voyageBottomCards {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;    
+    }
+    .card1Section { 
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .card2Section {
+        margin-top: 50px;
+        width: 80%;
+    }
+    .card3Section { 
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .card4Section {
+        margin-top: 50px;
+        width: 80%;
+        margin-bottom: 20vw;
+    }
+    .mythosTabletImgContainer {
+        display: none;
+    }
+    .mythosMobileImgContainer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+    }   
+    .mythosMobileImg {
+        width: 100%;
+        border-radius: 0.8vw;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .popupOneCancelButton {
+        width: 18px;
+        height: 18px;
+        margin-right: calc(max(20px, 5%));
+    }
+    .popupTwoCancelButton {
+        width: 18px;
+        height: 18px;
+        margin-right: calc(max(20px, 5%));
+    }
+    .popupThreeCancelButton {
+        width: 18px;
+        height: 18px;
+        margin-right: calc(max(20px, 5%));
+    }
+    .popupFourCancelButton {
+        width: 18px;
+        height: 18px;
+        margin-right: calc(max(20px, 5%));
+    }
+}
+
+
+/*desktop specific*/
+@media only screen and (min-width: 951px) {
+    /*should be able to remove position: fixed lines*/
+    .homeMainContainer {
+        max-height: 1200px;
+    }
+    
+    .mythosImg {
+        position: fixed;
+    }
+    .voyageImg {
+        position: fixed;
+    }
+    .caveImg {
+        position: fixed;
+    }
+
+
+
+    .hamburgerMenu {
+        display: none;
+    }
+    .menuMain {
+        display: none;
+    }
+    .menuMain.is-active {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1251px) {
+    .mythosImg {
+        top: 100px;
+    }
+    .voyageImg {
+        bottom: 0px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+    .mythosParagraphText {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    .voyageRightContainer {
+        align-items: flex-start;
+    }
+
+
+    .defaultButton {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
+    .voyageRightContainer {
+        align-items: flex-start;
+    }
+
+}
